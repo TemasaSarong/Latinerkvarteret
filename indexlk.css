@@ -10,3 +10,17 @@ header{
 	z-index:1; 
 	top:0px; 
 	padding-left: 0px;}
+
+footer{
+	font-family: 'alegray-sans', cursive;
+	text-align: center;
+	font-size:15px;
+	padding: 4px;
+	color: #ffffff;
+	position: fixed;
+	z-index: 0; /* Stay on top */
+	bottom: 0;
+	width: 100%;
+	display: inherit;
+	background-color:#1A1A1A;
+	opacity: 0.9;}
