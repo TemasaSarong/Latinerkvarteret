@@ -46,7 +46,8 @@ body {
 	display: flex;
 	top: 10vh;
 	left: 1vw;
-	width: 7.5rem; 
+	width: auto; 
+	height: 7rem;
 	transform: translateY(-50%)
 }
 
@@ -55,7 +56,7 @@ body {
 	display: flex;
 	top: 10vh;
 	right: 1.5vw;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	font: 700;
 	transform: translateY(-50%)
 }
@@ -136,8 +137,9 @@ body {
 	grid-area: beskrivelse;
 	min-height: inherit;
 	min-width: 45%;
-	padding: 0 2rem;
 	margin-top: 2.5rem;
+	margin-left: 3rem;
+	margin-right: 0rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -167,7 +169,8 @@ body {
 
 .btn1 {
 	color: #009c9c;
-	padding: 0 0 0 40rem;
+	font-size: 1.2rem;
+	padding: 0 0 0 40.5rem;
 	float: right;
 	text-align: left;
 	text-decoration: none;
@@ -198,6 +201,11 @@ body {
 	margin-bottom: 1rem;
 }
 
+.top-box img {
+	width: 400px;
+	height: 300px;
+}
+
 .top-box h4 {
 	font-size: 2.3rem;
 	font: 800;
@@ -214,6 +222,7 @@ body {
 
 .btn2 {
 	color: #009c9c;
+	font-size: 1.1rem;
 	margin-right: 0.5rem;
 /*	text-align: right;*/
 	text-decoration: none;
