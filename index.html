@@ -68,7 +68,7 @@
 		
 	  <!-- Tekst om LK -->
 		<div class="bekrivelse">
-			<h1>Latinerkvarteret</h1>
+			<div id="skift"><h1 id="demo">Latinerkvarteret</h1></div>
 			<h3>- hvor der er tid til dig</h3>
 			<p>Latinerkvarteret er til dig, som elsker at opleve alt, hvad Odense har at byde på i ét samlet område.<br/><br/>
 			Tag tiden til dig selv, koble af fra dagligdagens gøremål og oplev et område, som er indbegrebet af det kreative og det lidt skæve miljø, hvor der er plads til alle uanset alder. <br/><br/>Det er byens frirum med sjæl og historie. Her er der fællesskab og altid god stemning - og med et stort udvalg af shopping, lækker mad og vine samt spændende kunst og design, er der underholdning for både børn og voksne.</p>
@@ -136,5 +136,23 @@
 </div>
 	</div>
 	<!-- Wrapper ends -->
+	
+<script>
+var x = document.getElementById("skift");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("mouseout", mySecondFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Oplevelser Nærvær Fællesskab";
+  document.getElementById("demo").style.color = "#82d83e";
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML = "Latinerkvarteret";
+  document.getElementById("demo").style.color = "#ff0000";
+}
+
+</script>
+	
 </body>
 </html>

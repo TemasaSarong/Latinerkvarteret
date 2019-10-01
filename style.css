@@ -32,7 +32,7 @@ body {
 .header {
 	display: flex;
 	width: 100vw;
-	height: 20vh;
+	height: 150px;
 	top: 0;
 	}
 
@@ -44,7 +44,7 @@ body {
 .logo {
 	position: absolute;
 	display: flex;
-	top: 10vh;
+	top: 75px;
 	left: 1vw;
 	width: auto; 
 	height: 7rem;
@@ -54,7 +54,7 @@ body {
 .headertext {
 	position: absolute;
 	display: flex;
-	top: 10vh;
+	top: 78px;
 	right: 1.5vw;
 	font-size: 1.6rem;
 	font: 700;
@@ -64,7 +64,7 @@ body {
 /*Navigation ************************/
 #menu {
 	width: 98.6vw;
-	height: 6vh;
+	height: 40px;
 	top: 0;
 	background: #009c9c;
 }
@@ -98,7 +98,7 @@ body {
 
 .menu i{
 	text-decoration: none;
-	transform: translateY(10%)
+	transform: translateY(5%)
 }
 
 
@@ -326,7 +326,7 @@ body {
 	grid-area: box6;
 	width: 100%;
 	margin-left: 10%; 
-	margin-top: 10%;
+	margin-top: 9%;
 }
 
 .box6 p {
