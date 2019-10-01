@@ -1,2 +1,0 @@
-# Latinerkvarteret
-Redesign of Latinerkvarteret
