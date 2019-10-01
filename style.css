@@ -1,0 +1,368 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+/* Base style **********************************/
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Grid - Header *************************************************/
+
+.grid-wrapper{
+	display: grid;
+/*	backgound: #fff;*/
+	border: 3px solid #ededed;
+}
+
+#slide {
+	width: 98.6vw;
+}
+
+.header {
+	display: flex;
+	width: 100vw;
+	height: 20vh;
+	top: 0;
+	}
+
+.header ul {
+	line-height: 1;
+	list-style-type: none;
+}
+
+.logo {
+	position: absolute;
+	display: flex;
+	top: 10vh;
+	left: 1vw;
+	width: 7.5rem; 
+	transform: translateY(-50%)
+}
+
+.headertext {
+	position: absolute;
+	display: flex;
+	top: 10vh;
+	right: 1.5vw;
+	font-size: 1.5rem;
+	font: 700;
+	transform: translateY(-50%)
+}
+
+/*Navigation ************************/
+#menu {
+	width: 98.6vw;
+	height: 6vh;
+	top: 0;
+	background: #009c9c;
+}
+
+.menu {
+	display: inline-flex;
+	margin-left: 0rem;
+	list-style-type: none;
+	overflow: hidden;
+	font-size: 1.4rem;
+	}
+
+.menu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu a:hover {
+	color: #000;
+}
+
+.menu li {
+	float: left;
+	color: #fff;
+	margin-left: 5rem;
+	margin-right: 0.2rem;
+	padding: 0.45rem 1.5rem 0.4rem 0rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.menu i{
+	text-decoration: none;
+	transform: translateY(10%)
+}
+
+
+/* Grid - Main *****************************************************************/
+
+.wrapper {
+	display: grid;
+/*	border: 3px solid #ffacbf;*/
+	width: 98.5vw;
+}
+
+/* Øverste del *****************/
+.top-container {
+	display: grid;
+	grid-gap: 40px;
+	grid-template-areas: 
+	'video beskrivelse';
+	padding: 3vw 0;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+/* Promotion video */
+.video {
+	grid-area: video;
+	max-width: 50%;
+	}
+
+.video iframe {
+	width: 560px; 
+	height: 410px;
+}
+
+/* Beskrivels af LK */
+.bekrivelse {
+	grid-area: beskrivelse;
+	min-height: inherit;
+	min-width: 45%;
+	padding: 0 2rem;
+	margin-top: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-items: center;
+	text-align: justify;
+}
+
+.bekrivelse h1 {
+	font-size: 3.2rem;
+	font-style: normal;
+	margin: 0;
+	color: #ff0000;
+}
+
+.bekrivelse h3 {
+	font-size: 1.3rem;
+	font-style: italic;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	color: #7c7c7c;
+}
+
+.bekrivelse p {
+	font-size: 1.2rem;
+	line-height: 1.1;
+}
+
+.btn1 {
+	color: #009c9c;
+	padding: 0 0 0 40rem;
+	float: right;
+	text-align: left;
+	text-decoration: none;
+	line-height: 2.5;
+	border: 0;
+}
+
+/* Midterste del *********************************************/
+.mid-container {
+	display: grid;
+	grid-gap: 5vw;
+	grid-template-areas: 
+	'top-box top-box top-box';
+
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-bottom: 5vh;
+}
+
+/* Blog afsnit **************************/
+.top-box { 
+	border: solid;
+	border-color: #f9ca00;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-items: center;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+.top-box h4 {
+	font-size: 2.3rem;
+	font: 800;
+	color:#009c9c;
+	margin: 0 0.5rem;
+	line-height: 1.5;
+}
+
+.top-box p {
+	font-size: 1.2rem;
+	margin: 0 0.5rem;
+	line-height: 1.2;
+}
+
+.btn2 {
+	color: #009c9c;
+	margin-right: 0.5rem;
+/*	text-align: right;*/
+	text-decoration: none;
+	float: right;
+	border: 0;
+}
+
+/* Transport information ****************/
+.transport-container {
+	display: grid;
+	grid-template-areas: 
+	'box1 box2';
+	height: 15rem;
+	width: 98.5vw;
+	margin-left: 0; 
+	margin-right: 0;
+	background-color: #009c9c;
+	
+	}
+
+.box1 {
+	grid-area: box1;
+	margin-left: 5vw;
+	max-width: 14%;
+}
+
+.box1 h2 {
+	font-size: 2.5rem;
+	color: #fff; 
+	margin-top: 90%;
+}
+
+.box2 {
+	grid-area: box2;
+	margin-left: 50%; 
+	margin-right: 3.5rem;
+	margin-top: 10%;
+	width: 15rem;
+}
+
+.box2 p {
+	font-size: 1.2rem;
+	color: #fff;
+	text-align: left;
+	
+}
+
+.btn3 {
+	color: #f9ca00;
+	padding-right: 0.5rem;
+	float: right;
+	text-align: left;
+	text-decoration: none;
+	line-height: 1.5;
+	border: 0;}
+
+
+/* Kontakt information *******************************/
+.kontakt-container {
+	display: inline-grid;
+	grid-template-areas: 
+	'box3 box4 box6';
+	height: 12rem;
+	width: 98.5vw;
+	margin: 0px;
+	background-color: #ededed;	
+	line-height: 1;
+	}
+
+/* Kontaktpersoner *****/
+.box3 {
+	grid-area: box3;
+	width: 60%;
+	margin-left: 5vw;
+}
+
+.box3 h5 {
+	font-size: 1.3rem;
+	color: #000;
+	float: left;
+	margin-top: 25%;
+}
+
+/* Jørgen **************/
+.box4 {
+	grid-area: box4;
+	width: 100%;
+	margin-left: 60%; 
+	margin-top: 10%;
+}
+
+.box4 p {
+	font-size: 1.2rem;
+	color: #000;
+	text-align: left;
+	line-height: 1.25;
+}
+
+/* Dina ******************/
+.box6 {
+	grid-area: box6;
+	width: 100%;
+	margin-left: 10%; 
+	margin-top: 10%;
+}
+
+.box6 p {
+	font-size: 1.2rem;
+	color: #000;
+	text-align: left;
+	line-height: 1.25;
+}
+
+/* Footer med copyright *****************/
+footer {
+	font-family: 'Alegreya', cursive;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.8;
+	padding: 6px 0px;
+	color: #fff;
+	top: 0px;
+	bottom: 0;
+	width: 98.5vw;
+	display: inherit;
+	background-color: #7C7C7C;
+}
+
+/* Media Queries ***********************************/
+@media (max-width: 500px) {
+	.top-container {
+		grid-template-areas: 
+		'video'
+		'beskrivelse'
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
